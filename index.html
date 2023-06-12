@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500&display=swap" rel="stylesheet">
+    <title>Weather Omegacode</title>
+</head>
+<body>
+    <header>
+        <label class="finder-label" id="label"> Enter city name</label>
+        <form id="search-form">
+            <div class="finder-container" id="finder-container">
+                <input type="text" placeholder="Search city" class="finder-input" id="finder-input">
+            </div>
+        </form>
+
+        <div class="daytime-container" id="location-date">
+            <div class="cityname-country-container">
+                <div class="city-country">
+                    <p id="nameCity">NEW YORK</p>
+                    <p id="country">US</p>
+                </div>
+            </div>
+            <div class="daytime">
+                <p id="daytime">Thursday, 8 Jun 23</p>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="core-container" id="core">
+            <div class="current-day-container">
+                <div class="main-temp">
+                    <h1 id="temperature">12°</h1>
+                </div>
+                <p id="description">
+                    Clear
+                </p>
+                <img alt="weather-icon" id="icon">
+                <div class="feels-like-container">
+                    <span>Feels Like</span>
+                    <p id="feelsLike">12°</p>
+                </div>
+                <div class="humidity-container">
+                    <span>Humidity</span>
+                    <p id="humidity">48%</p>
+                </div>
+            </div>
+
+            <div class="fivedayweather-container">
+                <div class="day1">
+                    <div class="date">
+                        <p id="forecastDayone">FRI 9</p>
+                    </div>
+                    <div class="icon-day">
+                        <img alt="forecast-icon-one" id="iconFone">
+                    </div>
+                    <div class="min-max-temp">
+                        <p id="fOnemaxtemp">14°</p>
+                        <p id="fOnemintemp">3°</p>
+                    </div>
+                    <div class="description-day">
+                        <p id="fOnedescription">Mostly Cloudy</p>
+                    </div>
+                </div>
+
+                <div class="day2">
+                    <div class="date">
+                        <p id="forecastDaytwo">SAT 10</p>
+                    </div>
+                    <div class="icon-day">
+                        <img alt="forecast-icon-two" id="iconFtwo">
+                    </div>
+                    <div class="min-max-temp">
+                        <p id="fTwomaxtemp">14°</p>
+                        <p id="fTwomintemp">9°</p>
+                    </div>
+                    <div class="description-day">
+                        <p id="fTwodescription">Clear</p>
+                    </div>
+                </div>
+
+                <div class="day3">
+                    <div class="date">
+                        <p id="forecastDaythree">SUN 11</p>
+                    </div>
+                    <div class="icon-day">
+                        <img alt="forecast-icon-three" id="iconFthree">
+                    </div>
+                    <div class="min-max-temp">
+                        <p id="fThreemaxtemp">22°</p>
+                        <p id="fThreemintemp">15°</p>                   
+                    </div>
+                    <div class="description-day">
+                        <p id="fThreedescription">Light Showers</p>
+                    </div>
+                </div>
+
+                <div class="day4">
+                    <div class="date">
+                        <p id="forecastDayfour">MON 12</p>
+                    </div>
+                    <div class="icon-day">
+                        <img alt="forecast-icon-four" id="iconFfour">
+                    </div>
+                    <div class="min-max-temp">
+                        <p id="fFourmaxtemp">22°</p>
+                        <p id="fFourmintemp">12°</p>
+                    </div>
+                    <div class="description-day">
+                        <p id="fFourdescription">Partly Cloudy</p>
+                    </div>
+                </div>
+
+                <div class="day5">
+                    <div class="date">
+                        <p id="forecastDayfive">TUE 13</p>
+                    </div>
+                    <div class="icon-day">
+                        <img alt="forecast-icon-five" id="iconFfive">
+                    </div>
+                    <div class="min-max-temp">
+                        <p id="fFivemaxtemp">19°</p>
+                        <p id="fFivemintemp">10°</p>
+                    </div>
+                    <div class="description-day">
+                        <p id="fFivedescription">Mostly Cloudy</p>
+                    </div>
+                </div>
+            </div>
+        </div>        
+    </main>
+    <footer>
+        <div class="footer-author">
+            <p>© Created by <span>@erigdip</span>, 2023.</p>
+            <p>All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="js/weather.js" defer></script>
+</body>
+</html>

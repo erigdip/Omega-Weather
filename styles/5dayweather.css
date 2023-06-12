@@ -1,0 +1,97 @@
+.fivedayweather-container{
+    max-width: 768px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 30px 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+}
+
+.day1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.day2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.day3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+    gap: 10px;
+}
+
+.day4 {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.day5 {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.date > p {
+    text-align: center;
+    margin: 0;
+    font-weight: 400;
+    font-size: 1.25em;
+}
+
+.min-max-temp {
+    display: flex;
+    flex-direction: row;
+}
+
+.min-max-temp > p {
+    text-align: center;
+    margin: 0;
+    font-family: var(--font);
+    font-weight: 400;
+    font-size: 1.25em;
+}
+
+.description-day > p {
+    text-align: center;
+    margin: 0;
+    font-family: var(--font);
+    font-weight: 400;
+    font-size: 1.25em;
+}
+
+@media (min-width: 768px) {
+    .day4 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    .day5 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+}

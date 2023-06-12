@@ -1,0 +1,27 @@
+@import './header.css';
+@import './finder-container.css';
+@import './core-container.css';
+@import './5dayweather.css';
+@import './footer.css';
+
+:root {
+    --font: font-family: 'Kanit', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #202020;
+}
+
+h1 {
+    color: white;
+}
+
+span {
+    color: white;
+}
+
+p {
+    color: white;
+}
