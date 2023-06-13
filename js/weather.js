@@ -48,7 +48,11 @@ let finderInput = document.getElementById('finder-input');
 const locationDate = document.getElementById('location-date');
 const core = document.getElementById('core');
 const label = document.getElementById('label');
+const startImg = document.getElementById('starting-img');
 
+function capitalizeFirstLetter(string) {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+}
 
 function onSubmit(event){
     event.preventDefault();
@@ -69,10 +73,11 @@ async function getWeather(cityname) {
         label.style.display = 'none';
         locationDate.style.display = 'flex';
         core.style.display = 'block';
+        startImg.style.display = 'none';
 
         nameCity.innerHTML = data.name;
 
-        description.innerHTML = data.weather[0].description;
+        description.innerHTML = capitalizeFirstLetter(data.weather[0].description);
     
         countryCode.innerHTML = data.sys.country;
     
@@ -230,15 +235,15 @@ async function getForecast (cityname) {
             data.list[38].main.temp_min,
             data.list[39].main.temp_min,)) + '°';
     
-        fOnedescription.innerText = data.list[6].weather[0].description;
+        fOnedescription.innerText = capitalizeFirstLetter(data.list[6].weather[0].description);
     
-        fTwodescription.innerText = data.list[14].weather[0].description;
+        fTwodescription.innerText = capitalizeFirstLetter(data.list[14].weather[0].description);
     
-        fThreedescription.innerText = data.list[22].weather[0].description;
+        fThreedescription.innerText = capitalizeFirstLetter(data.list[22].weather[0].description);
     
-        fFourdescription.innerText = data.list[30].weather[0].description;
+        fFourdescription.innerText = capitalizeFirstLetter(data.list[30].weather[0].description);
     
-        fFivedescription.innerText = data.list[38].weather[0].description;
+        fFivedescription.innerText = capitalizeFirstLetter(data.list[38].weather[0].description);
 
     } catch(err2) {
     console.log(err2);
