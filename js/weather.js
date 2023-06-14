@@ -486,7 +486,7 @@ async function getForecast (cityname) {
             data.list[5].main.temp_max,
             data.list[6].main.temp_max,
             data.list[7].main.temp_max, 
-            data.list[8].main.temp_max)) + '° /';
+            data.list[8].main.temp_max)) + '°/';
         fOnemintemp.innerText = Math.round(Math.min(
             data.list[1].main.temp_min,
             data.list[2].main.temp_min,
@@ -505,7 +505,7 @@ async function getForecast (cityname) {
             data.list[13].main.temp_max,
             data.list[14].main.temp_max,
             data.list[15].main.temp_max, 
-            data.list[16].main.temp_max)) + '° /';
+            data.list[16].main.temp_max)) + '°/';
         fTwomintemp.innerText = Math.round(Math.min(
             data.list[9].main.temp_min,
             data.list[10].main.temp_min,
@@ -524,7 +524,7 @@ async function getForecast (cityname) {
             data.list[21].main.temp_max,
             data.list[22].main.temp_max,
             data.list[23].main.temp_max, 
-            data.list[24].main.temp_max)) + '° /';
+            data.list[24].main.temp_max)) + '°/';
         fThreemintemp.innerText = Math.round(Math.min(
             data.list[17].main.temp_min,
             data.list[18].main.temp_min,
@@ -543,7 +543,7 @@ async function getForecast (cityname) {
             data.list[29].main.temp_max,
             data.list[30].main.temp_max,
             data.list[31].main.temp_max, 
-            data.list[32].main.temp_max)) + '° /';
+            data.list[32].main.temp_max)) + '°/';
         fFourmintemp.innerText = Math.round(Math.min(
             data.list[25].main.temp_min,
             data.list[26].main.temp_min,
@@ -561,7 +561,7 @@ async function getForecast (cityname) {
             data.list[36].main.temp_max,
             data.list[37].main.temp_max,
             data.list[38].main.temp_max,
-            data.list[39].main.temp_max,)) + '° /';
+            data.list[39].main.temp_max,)) + '°/';
         fFivemintemp.innerText = Math.round(Math.min(
             data.list[33].main.temp_min,
             data.list[34].main.temp_min,

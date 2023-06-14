@@ -5,7 +5,7 @@
 @import './footer.css';
 
 :root {
-    --font: font-family: 'Kanit', sans-serif;
+    --font: 'Kanit', sans-serif;
 }
 
 body {
@@ -21,13 +21,16 @@ body {
 }
 
 h1 {
+    font-family: var(--font);
     color: white;
 }
 
 span {
+    font-family: var(--font);
     color: rgba(165, 165, 165, 0.65);
 }
 
 p {
+    font-family: var(--font);
     color: white;
 }
