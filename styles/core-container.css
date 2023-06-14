@@ -3,12 +3,17 @@
 }
 
 .current-day-container {
+    margin: 30px auto;
+    max-width: 300px;
+    padding: 20px 0 20px 0;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;    
     font-family: var(--font);
     gap: 10px;
+    background-image: linear-gradient(to bottom right, rgba(110, 110, 110, 0.5), #202020 45% 55%, rgba(110, 110, 110, 0.5));
+    border-radius: 20px 200px / 240px;
 }
 
 .current-day-container > p {
@@ -37,7 +42,6 @@
 
 .feels-like-container > span {
     font-size: 1.25em;
-    opacity: .2;
 }
 
 .feels-like-container > p {
@@ -56,7 +60,6 @@
 
 .humidity-container > span {
     font-size: 1.25em;
-    opacity: .2;
 }
 
 .humidity-container > p {
@@ -64,4 +67,11 @@
     font-weight: 300;
     font-family: var(--font);
     font-size: 1.75em;
+}
+
+@media (min-width: 768px) {
+    .current-day-container {
+        margin: 30px auto;
+        max-width: 450px;
+    }
 }

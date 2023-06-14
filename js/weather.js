@@ -82,7 +82,63 @@ async function getWeather(cityname) {
         countryCode.innerHTML = data.sys.country;
     
         const iconWeather = data.weather[0].icon;
-        icon.setAttribute('src', `https://openweathermap.org/img/wn/${iconWeather}@2x.png`);
+        //icon.setAttribute('src', `https://openweathermap.org/img/wn/${iconWeather}@2x.png`);
+        switch (iconWeather) {
+            case '01d':
+                icon.src = './assets/animated/day-clear-sky.svg'
+                break;
+            case '01n':
+                icon.src = './assets/animated/night-clear-sky.svg'
+                break;
+            case '02d':
+                icon.src = './assets/animated/cloudy-day-1.svg'
+                break;
+            case '02n':
+                icon.src = './assets/animated/cloudy-night-1.svg'
+                break;
+            case '03d':
+                icon.src = './assets/animated/cloudy-day-3.svg'
+                break;
+            case '03n':
+                icon.src = './assets/animated/cloudy-night-3.svg'
+                break;
+            case '04d':
+                icon.src = './assets/animated/cloudy.svg'
+                break;
+            case '04n':
+                icon.src = './assets/animated/cloudy.svg'
+                break;
+            case '09d':
+                icon.src = './assets/animated/rainy-day-2.svg'
+                break;
+            case '09n':
+                icon.src = './assets/animated/rainy-night-1.svg'
+                break;
+            case '10d':
+                icon.src = './assets/animated/rainy-day-3.svg'
+                break;
+            case '10n':
+                icon.src = './assets/animated/rainy-night-2.svg'
+                break;
+            case '11d':
+                icon.src = './assets/animated/thunder.svg'
+                break;
+            case '11n':
+                icon.src = './assets/animated/thunder.svg'
+                break;
+            case '13d':
+                icon.src = './assets/animated/snowy-day-1.svg'
+                break;
+            case '13n':
+                icon.src = './assets/animated/snowy-night-2.svg'
+                break;
+            case '50d':
+                icon.src = `https://openweathermap.org/img/wn/${iconWeather}@2x.png`
+                break;
+            case '50n':
+                icon.src = `https://openweathermap.org/img/wn/${iconWeather}@2x.png`
+                break;
+        };
     
         temperature.innerText = Math.round(data.main.temp) + '°';
     
@@ -128,19 +184,299 @@ async function getForecast (cityname) {
         forecastDayfive.innerText = dateFive.toLocaleDateString('en-GB', {weekday:'short', day:'numeric'});
     
         const iconForecastOne = data.list[6].weather[0].icon;
-        iconFone.setAttribute('src', `https://openweathermap.org/img/wn/${iconForecastOne}.png`);
+        //iconFone.setAttribute('src', `https://openweathermap.org/img/wn/${iconForecastOne}.png`);
+        switch (iconForecastOne) {
+            case '01d':
+                iconFone.src = './assets/animated/day-clear-sky.svg'
+                break;
+            case '01n':
+                iconFone.src = './assets/animated/night-clear-sky.svg'
+                break;
+            case '02d':
+                iconFone.src = './assets/animated/cloudy-day-1.svg'
+                break;
+            case '02n':
+                iconFone.src = './assets/animated/cloudy-night-1.svg'
+                break;
+            case '03d':
+                iconFone.src = './assets/animated/cloudy-day-3.svg'
+                break;
+            case '03n':
+                iconFone.src = './assets/animated/cloudy-night-3.svg'
+                break;
+            case '04d':
+                iconFone.src = './assets/animated/cloudy.svg'
+                break;
+            case '04n':
+                iconFone.src = './assets/animated/cloudy.svg'
+                break;
+            case '09d':
+                iconFone.src = './assets/animated/rainy-day-2.svg'
+                break;
+            case '09n':
+                iconFone.src = './assets/animated/rainy-night-1.svg'
+                break;
+            case '10d':
+                iconFone.src = './assets/animated/rainy-day-3.svg'
+                break;
+            case '10n':
+                iconFone.src = './assets/animated/rainy-night-2.svg'
+                break;
+            case '11d':
+                iconFone.src = './assets/animated/thunder.svg'
+                break;
+            case '11n':
+                iconFone.src = './assets/animated/thunder.svg'
+                break;
+            case '13d':
+                iconFone.src = './assets/animated/snowy-day-1.svg'
+                break;
+            case '13n':
+                iconFone.src = './assets/animated/snowy-night-2.svg'
+                break;
+            case '50d':
+                iconFone.src = `https://openweathermap.org/img/wn/${iconWeather}@2x.png`
+                break;
+            case '50n':
+                iconForecastOne.src = `https://openweathermap.org/img/wn/${iconWeather}@2x.png`
+                break;
+        };
     
         const iconForecastTwo = data.list[14].weather[0].icon;
-        iconFtwo.setAttribute('src', `https://openweathermap.org/img/wn/${iconForecastTwo}.png`);
+        //iconFtwo.setAttribute('src', `https://openweathermap.org/img/wn/${iconForecastTwo}.png`);
+        switch (iconForecastTwo) {
+            case '01d':
+                iconFtwo.src = './assets/animated/day-clear-sky.svg'
+                break;
+            case '01n':
+                iconFtwo.src = './assets/animated/night-clear-sky.svg'
+                break;
+            case '02d':
+                iconFtwo.src = './assets/animated/cloudy-day-1.svg'
+                break;
+            case '02n':
+                iconFtwo.src = './assets/animated/cloudy-night-1.svg'
+                break;
+            case '03d':
+                iconFtwo.src = './assets/animated/cloudy-day-3.svg'
+                break;
+            case '03n':
+                iconFtwo.src = './assets/animated/cloudy-night-3.svg'
+                break;
+            case '04d':
+                iconFtwo.src = './assets/animated/cloudy.svg'
+                break;
+            case '04n':
+                iconFtwo.src = './assets/animated/cloudy.svg'
+                break;
+            case '09d':
+                iconFtwo.src = './assets/animated/rainy-day-2.svg'
+                break;
+            case '09n':
+                iconFtwo.src = './assets/animated/rainy-night-1.svg'
+                break;
+            case '10d':
+                iconFtwo.src = './assets/animated/rainy-day-3.svg'
+                break;
+            case '10n':
+                iconFtwo.src = './assets/animated/rainy-night-2.svg'
+                break;
+            case '11d':
+                iconFtwo.src = './assets/animated/thunder.svg'
+                break;
+            case '11n':
+                iconFtwo.src = './assets/animated/thunder.svg'
+                break;
+            case '13d':
+                iconFtwo.src = './assets/animated/snowy-day-1.svg'
+                break;
+            case '13n':
+                iconFtwo.src = './assets/animated/snowy-night-2.svg'
+                break;
+            case '50d':
+                iconFtwo.src = `https://openweathermap.org/img/wn/${iconWeather}@2x.png`
+                break;
+            case '50n':
+                iconFtwo.src = `https://openweathermap.org/img/wn/${iconWeather}@2x.png`
+                break;
+        };
     
         const iconForecastThree = data.list[22].weather[0].icon;
-        iconFthree.setAttribute('src', `https://openweathermap.org/img/wn/${iconForecastThree}.png`);
+        //iconFthree.setAttribute('src', `https://openweathermap.org/img/wn/${iconForecastThree}.png`);
+        switch (iconForecastThree) {
+            case '01d':
+                iconFthree.src = './assets/animated/day-clear-sky.svg'
+                break;
+            case '01n':
+                iconFthree.src = './assets/animated/night-clear-sky.svg'
+                break;
+            case '02d':
+                iconFthree.src = './assets/animated/cloudy-day-1.svg'
+                break;
+            case '02n':
+                iconFthree.src = './assets/animated/cloudy-night-1.svg'
+                break;
+            case '03d':
+                iconFthree.src = './assets/animated/cloudy-day-3.svg'
+                break;
+            case '03n':
+                iconFthree.src = './assets/animated/cloudy-night-3.svg'
+                break;
+            case '04d':
+                iconFthree.src = './assets/animated/cloudy.svg'
+                break;
+            case '04n':
+                iconFthree.src = './assets/animated/cloudy.svg'
+                break;
+            case '09d':
+                iconFthree.src = './assets/animated/rainy-day-2.svg'
+                break;
+            case '09n':
+                iconFthree.src = './assets/animated/rainy-night-1.svg'
+                break;
+            case '10d':
+                iconFthree.src = './assets/animated/rainy-day-3.svg'
+                break;
+            case '10n':
+                iconFthree.src = './assets/animated/rainy-night-2.svg'
+                break;
+            case '11d':
+                iconFthree.src = './assets/animated/thunder.svg'
+                break;
+            case '11n':
+                iconFthree.src = './assets/animated/thunder.svg'
+                break;
+            case '13d':
+                iconFthree.src = './assets/animated/snowy-day-1.svg'
+                break;
+            case '13n':
+                iconFthree.src = './assets/animated/snowy-night-2.svg'
+                break;
+            case '50d':
+                iconFthree.src = `https://openweathermap.org/img/wn/${iconWeather}@2x.png`
+                break;
+            case '50n':
+                iconFthree.src = `https://openweathermap.org/img/wn/${iconWeather}@2x.png`
+                break;
+        };
     
         const iconForecastFour = data.list[30].weather[0].icon;
-        iconFfour.setAttribute('src', `https://openweathermap.org/img/wn/${iconForecastFour}.png`);
+        //iconFfour.setAttribute('src', `https://openweathermap.org/img/wn/${iconForecastFour}.png`);
+        switch (iconForecastFour) {
+            case '01d':
+                iconFfour.src = './assets/animated/day-clear-sky.svg'
+                break;
+            case '01n':
+                iconFfour.src = './assets/animated/night-clear-sky.svg'
+                break;
+            case '02d':
+                iconFfour.src = './assets/animated/cloudy-day-1.svg'
+                break;
+            case '02n':
+                iconFfour.src = './assets/animated/cloudy-night-1.svg'
+                break;
+            case '03d':
+                iconFfour.src = './assets/animated/cloudy-day-3.svg'
+                break;
+            case '03n':
+                iconFfour.src = './assets/animated/cloudy-night-3.svg'
+                break;
+            case '04d':
+                iconFfour.src = './assets/animated/cloudy.svg'
+                break;
+            case '04n':
+                iconFfour.src = './assets/animated/cloudy.svg'
+                break;
+            case '09d':
+                iconFfour.src = './assets/animated/rainy-day-2.svg'
+                break;
+            case '09n':
+                iconFfour.src = './assets/animated/rainy-night-1.svg'
+                break;
+            case '10d':
+                iconFfour.src = './assets/animated/rainy-day-3.svg'
+                break;
+            case '10n':
+                iconFfour.src = './assets/animated/rainy-night-2.svg'
+                break;
+            case '11d':
+                iconFfour.src = './assets/animated/thunder.svg'
+                break;
+            case '11n':
+                iconFfour.src = './assets/animated/thunder.svg'
+                break;
+            case '13d':
+                iconFfour.src = './assets/animated/snowy-day-1.svg'
+                break;
+            case '13n':
+                iconFfour.src = './assets/animated/snowy-night-2.svg'
+                break;
+            case '50d':
+                iconFfour.src = `https://openweathermap.org/img/wn/${iconWeather}@2x.png`
+                break;
+            case '50n':
+                iconFfour.src = `https://openweathermap.org/img/wn/${iconWeather}@2x.png`
+                break;
+        };
     
         const iconForecastFive = data.list[38].weather[0].icon;
-        iconFfive.setAttribute('src', `https://openweathermap.org/img/wn/${iconForecastFive}.png`);
+        //iconFfive.setAttribute('src', `https://openweathermap.org/img/wn/${iconForecastFive}.png`);
+        switch (iconForecastFive) {
+            case '01d':
+                iconFfive.src = './assets/animated/day-clear-sky.svg'
+                break;
+            case '01n':
+                iconFfive.src = './assets/animated/night-clear-sky.svg'
+                break;
+            case '02d':
+                iconFfive.src = './assets/animated/cloudy-day-1.svg'
+                break;
+            case '02n':
+                iconFfive.src = './assets/animated/cloudy-night-1.svg'
+                break;
+            case '03d':
+                iconFfive.src = './assets/animated/cloudy-day-3.svg'
+                break;
+            case '03n':
+                iconFfive.src = './assets/animated/cloudy-night-3.svg'
+                break;
+            case '04d':
+                iconFfive.src = './assets/animated/cloudy.svg'
+                break;
+            case '04n':
+                iconFfive.src = './assets/animated/cloudy.svg'
+                break;
+            case '09d':
+                iconFfive.src = './assets/animated/rainy-day-2.svg'
+                break;
+            case '09n':
+                iconFfive.src = './assets/animated/rainy-night-1.svg'
+                break;
+            case '10d':
+                iconFfive.src = './assets/animated/rainy-day-3.svg'
+                break;
+            case '10n':
+                iconFfive.src = './assets/animated/rainy-night-2.svg'
+                break;
+            case '11d':
+                iconFfive.src = './assets/animated/thunder.svg'
+                break;
+            case '11n':
+                iconFfive.src = './assets/animated/thunder.svg'
+                break;
+            case '13d':
+                iconFfive.src = './assets/animated/snowy-day-1.svg'
+                break;
+            case '13n':
+                iconFfive.src = './assets/animated/snowy-night-2.svg'
+                break;
+            case '50d':
+                iconFfive.src = `https://openweathermap.org/img/wn/${iconWeather}@2x.png`
+                break;
+            case '50n':
+                iconFfive.src = `https://openweathermap.org/img/wn/${iconWeather}@2x.png`
+                break;
+        };
     
         fOnemaxtemp.innerText = Math.round(Math.max(
             data.list[1].main.temp_max,
